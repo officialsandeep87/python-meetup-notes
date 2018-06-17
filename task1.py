@@ -8,7 +8,11 @@ def main():
         array1 = f.readlines()
     
     for line in array1:
-        print(line)
+        ##print(line)
+        line = line.strip()
+        operand_one, operator, operand_two = line.split(" ",3)
+        print(operand_one, operator, operand_two)
+
 
 if __name__ == "__main__":
     main()
